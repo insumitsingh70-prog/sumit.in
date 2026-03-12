@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sumit' web </title>
-    <style>/* Page background */
-body{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sumit Singh Website</title>
+
+<style>
+
+/* Reset */
+*{
     margin:0;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: linear-gradient(135deg,#eef2f3,#dfe9f3);
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:'Segoe UI', Tahoma, sans-serif;
+    background:linear-gradient(135deg,#eef2f3,#dfe9f3);
     color:#333;
     line-height:1.7;
-    padding:30px;
+}
+
+/* Container */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
 }
 
 /* Header */
 header{
-    text-align:center;
     background:white;
-    padding:20px;
     border-radius:12px;
+    padding:20px;
     box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    text-align:center;
 }
 
-/* Website title */
+/* Title */
 header h1{
-    margin:10px 0;
+    margin-bottom:10px;
     letter-spacing:2px;
-    font-size:32px;
 }
 
-/* Navigation links */
-header a{
+/* Navbar */
+nav{
+    margin-top:10px;
+}
+
+nav a{
     text-decoration:none;
-    margin:0 15px;
+    margin:10px;
     color:#555;
     font-weight:600;
     font-size:18px;
-    transition:all 0.3s ease;
 }
 
-header a:hover{
+nav a:hover{
     color:#6c63ff;
 }
 
-/* Main content card */
+/* Main card */
 main{
     margin-top:30px;
     background:white;
@@ -53,105 +70,134 @@ main{
     box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
 
-/* Paragraph styling */
-p{
-    font-size:18px;
-    max-width:800px;
+/* Flex layout */
+.hero{
+    display:flex;
+    align-items:center;
+    gap:30px;
 }
 
-/* Image styling */
-img{
+/* Image */
+.hero img{
+    width:100%;
+    max-width:400px;
     border-radius:12px;
     box-shadow:0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* Section links (web designing, blog, thoughts) */
-pre a{
-    text-decoration:none;
+/* Paragraph */
+p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+/* Button section */
+.links{
+    margin-top:30px;
+    text-align:center;
+}
+
+.links a{
     display:inline-block;
     margin:10px;
     padding:12px 22px;
     border-radius:8px;
     background:#6c63ff;
     color:white;
+    text-decoration:none;
     font-weight:600;
-    transition:all 0.3s ease;
 }
 
-pre a:hover{
+.links a:hover{
     background:#4f46e5;
-    transform:translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer{
-    margin-top:40px;
     text-align:center;
+    margin-top:40px;
     color:#666;
-    font-size:14px;
-}</style>
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero img{
+    max-width:250px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+main{
+    padding:25px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <header>
 
-<div><h1>SUMIT SINGH'WEBSITE</h1>
-<a href="home.html">home</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<div class="container">
+
+<header>
+
+<h1>SUMIT SINGH WEBSITE</h1>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<main>
+
+<div class="hero">
+
+<div>
+<p>Hi, I am <b>Sumit Singh</b>. Web developer learning HTML, CSS, Java and Python who loves building things on the internet.</p>
+
+<p>I enjoy learning technology, creating websites and sharing knowledge with people around the world.</p>
+
+<p>My goal is to keep improving my skills and build projects that inspire others.</p>
 </div>
-    
- <hr>
-    </header>
-    <main> 
-<img src="logo cutout copy.png"alt="" align="right"  width="500" height="500"> 
 
-<p>
-Hi, I am <b>Sumit Singh</b>. Web developer , learning languages like html , css , java and python  who loves building things on the internet.
-</p>
+<img src="logo cutout copy.png">
 
-<p>
-I enjoy learning about technology, creating websites, and sharing
-knowledge with people around the world. My goal is to keep improving
-my skills and build projects that can inspire others.
-</p>
+</div>
 
-<p>
-Through my journey, I believe in creativity, innovation, and
-continuous learning to achieve success in the digital world.
-</p> <hr>
+<hr style="margin:30px 0">
 
-<p> <h1></h1> <b>here you will seee my web design  , blogs and thoughts</b> </p> <pre>
+<p style="text-align:center;"><b>Here you will see my web design, blogs and thoughts</b></p>
 
-
-
-
-
-<a href="webdesigning.html" target="_blank">WEB DESIGNING </a>    
+<div class="links">
+<a href="web designing.html">WEB DESIGNING</a>
 <a href="blog.html">BLOG</a>
 <a href="thoughts.html">THOUGHTS</a>
+</div>
 
+<p style="text-align:center; margin-top:30px;">
+THANK YOU FOR VISITING. I KNOW I AM NOT PERFECT BUT I AM LEARNING HOW TO BE A FINE WEB DEVELOPER.
+</p>
 
+</main>
 
-<p>THANK YOU FOR VISITING , I KNOW I AM NOT PERFECT IN IT <b> BUT I AM LEARNING"HOW TO BE A FINE WEB DEVELOPER".</b> </b></p>
- 
+<footer>
+<p>© 2026 Sumit Singh</p>
+</footer>
 
+</div>
 
-
-
-
-</pre>
-
-
-    </main>
-
-
-    <footer>
-
-
-
-
-    </footer>
 </body>
-
-</html>z
+</html>
